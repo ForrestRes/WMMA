@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/bMessagesView"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/tvMessagesRecipients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recipients" />
+
+            <TextView
+                android:id="@+id/tvMessagesUnreadMessages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unread Messages"
+                android:layout_below="@id/tvMessagesRecipients"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bMessagesView"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="View"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

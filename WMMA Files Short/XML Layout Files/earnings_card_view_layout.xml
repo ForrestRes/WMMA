@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvEarningsPeriod"
+            android:text="Pay Period: "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvEarningsStartDate"
+            android:text="Start Date"
+            android:layout_toRightOf="@id/tvEarningsPeriod"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - "
+            android:id="@+id/tvEarningsHyphen"
+            android:layout_toRightOf="@id/tvEarningsStartDate"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvEarningsEndDate"
+            android:text="End Date"
+            android:layout_toRightOf="@id/tvEarningsHyphen"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvEarningsShifts"
+            android:text="Shifts: "
+            android:layout_below="@id/tvEarningsPeriod"
+            android:layout_alignRight="@id/tvEarningsPeriod"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvEarningsNumShifts"
+            android:text="num"
+            android:layout_below="@id/tvEarningsPeriod"
+            android:layout_toRightOf="@id/tvEarningsShifts"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvEarningsHours"
+            android:text="Hours: "
+            android:layout_below="@id/tvEarningsShifts"
+            android:layout_alignRight="@id/tvEarningsPeriod"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvEarningsNumHours"
+            android:text="num"
+            android:layout_below="@id/tvEarningsShifts"
+            android:layout_toRightOf="@id/tvEarningsHours"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvEarningsCheck"
+            android:text="$num"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="20dp"/>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

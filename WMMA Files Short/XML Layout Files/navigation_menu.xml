@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item android:id = "@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home"/>
+        <item android:id = "@+id/nav_availability"
+            android:icon="@drawable/ic_availability"
+            android:title="Availability"/>
+        <item android:id = "@+id/nav_shifts"
+            android:icon="@drawable/ic_calendar"
+            android:title="Shifts"/>
+        <item android:id = "@+id/nav_earnings"
+            android:icon="@drawable/ic_earnings"
+            android:title="Earnings"/>
+        <item android:id = "@+id/nav_messages"
+            android:icon="@drawable/ic_messages"
+            android:title="Messages"/>
+        <item android:id = "@+id/nav_time_away"
+            android:icon="@drawable/ic_time_away"
+            android:title="Time Away"/>
+        <item android:id = "@+id/nav_shift_trade"
+            android:icon="@drawable/ic_shift_trade"
+            android:title="Shift Trade"/>
+        <item android:id = "@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings"/>
+    </group>
+</menu>

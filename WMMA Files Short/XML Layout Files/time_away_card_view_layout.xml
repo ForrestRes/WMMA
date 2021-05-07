@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/cvTimeAwayRequest"
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlTimeAway"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/bTimeAwayEdit">
+
+            <TextView
+                android:id="@+id/tvTimeAwayApproved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Approved" />
+
+            <TextView
+                android:id="@+id/tvTimeAwayFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvTimeAwayApproved"
+                android:text="From: " />
+
+            <TextView
+                android:id="@+id/tvTimeAwayStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tvTimeAwayFrom"
+                android:layout_toRightOf="@id/tvTimeAwayFrom"
+                android:text="StartDate" />
+
+            <TextView
+                android:id="@+id/tvTimeAwayTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTimeAwayFrom"
+                android:text="To: " />
+
+            <TextView
+                android:id="@+id/tvTimeAwayEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tvTimeAwayStartDate"
+                android:layout_alignTop="@id/tvTimeAwayTo"
+                android:text="EndDate" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bTimeAwayEdit"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:text="Edit" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

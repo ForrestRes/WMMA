@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsFAQFragment">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="?actionBarSize"
+        android:id="@+id/cvSettings">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarSize="15dp"
+                android:fadeScrollbars="false"
+                android:scrollIndicators="right"
+                android:id="@+id/svSettings">
+
+                <LinearLayout
+                    android:id="@+id/llSettingsFAQ"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingRight="15dp"
+                    android:paddingLeft="15dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvSettingsFAQ"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </ScrollView>
+
+            <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Close FAQ"
+            android:layout_alignParentBottom="true"
+            android:onClick="onCloseFAQ" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTradeName"
+            android:text="Name Name"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTradeShift"
+            android:text="Shift: "
+            android:layout_above="@id/tvTradeFrom"
+            android:layout_alignRight="@id/tvTradeFrom"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTradeDate"
+            android:text="Date"
+            android:textSize="18dp"
+            android:layout_toRightOf="@id/tvTradeShift"
+            android:layout_below="@id/tvTradeName"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTradeStartTime"
+            android:text="Start Time"
+            android:layout_below="@id/tvTradeDate"
+            android:layout_toRightOf="@id/tvTradeFrom"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTradeFrom"
+            android:text="From: "
+            android:layout_below="@id/tvTradeDate"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTradeTo"
+            android:text="To: "
+            android:layout_below="@id/tvTradeFrom"
+            android:layout_alignRight="@id/tvTradeFrom"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTradeEndTime"
+            android:text="End Time"
+            android:layout_below="@id/tvTradeFrom"
+            android:layout_toRightOf="@id/tvTradeFrom"/>
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="45dp"
+            android:id="@+id/bTradeTake"
+            android:text="Take"
+            android:textSize="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

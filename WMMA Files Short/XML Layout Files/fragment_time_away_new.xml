@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.NoActionBar"
+    tools:context=".TimeAwayEditFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTimeAwayRequestView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rlTimeAwayRequest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="?actionBarSize">
+
+
+            <TextView
+                android:id="@+id/tvTimeAwayNewInstructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instructions"
+                android:layout_alignParentTop="true"/>
+
+            <TextView
+                android:id="@+id/tvTimeAwayNewStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Date"
+                android:layout_below="@id/tvTimeAwayNewInstructions"/>
+
+            <EditText
+                android:id="@+id/etTimeAwayNewStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTimeAwayNewInstructions"
+                android:layout_toRightOf="@id/tvTimeAwayNewStartDate" />
+
+            <TextView
+                android:id="@+id/tvTimeAwayNewEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End Date"
+                android:layout_below="@id/etTimeAwayNewStartDate" />
+
+            <EditText
+                android:id="@+id/etTimeAwayNewEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/etTimeAwayNewStartDate"
+                android:layout_alignTop="@id/tvTimeAwayNewEndDate" />
+
+            <Button
+                android:id="@+id/bTimeAwayNewSubmitRequest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit Request"
+                android:layout_above="@id/bTimeAwayNewCancel"/>
+
+            <Button
+                android:id="@+id/bTimeAwayNewCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

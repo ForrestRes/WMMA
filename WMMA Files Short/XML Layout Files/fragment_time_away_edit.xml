@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.NoActionBar"
+    tools:context=".TimeAwayEditFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTimeAwayRequestView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rlTimeAwayRequest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="?actionBarSize">
+
+            <Button
+                android:id="@+id/bTimeAwayRequestDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete Request"
+                android:layout_above="@+id/bTimeAwayRequestBack"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Back To Time Away"
+                android:id="@+id/bTimeAwayRequestBack"
+                android:layout_alignParentBottom="true"/>
+
+            <TextView
+                android:id="@+id/tvTimeAwayRequestApproval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ApprovalStatus"
+                android:layout_alignParentTop="true"/>
+
+            <TextView
+                android:id="@+id/tvTimeAwaysRequestEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EndDate"
+                android:layout_below="@id/tvTimeAwayRequestStartDate"
+                android:layout_alignLeft="@id/tvTimeAwayRequestStartDate"/>
+
+            <TextView
+                android:id="@+id/tvTimeAwayRequestStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="StartDate"
+                android:layout_below="@id/tvTimeAwayRequestApproval"
+                android:layout_toRightOf="@id/tvTimeAwayRequestFrom"/>
+
+            <TextView
+                android:id="@+id/tvTimeAwayRequestFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="From: "
+                android:layout_below="@id/tvTimeAwayRequestApproval"/>
+
+            <TextView
+                android:id="@+id/tvTimeAwayRequestTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="To: "
+                android:layout_below="@id/tvTimeAwayRequestFrom"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
